@@ -1,0 +1,2 @@
+import java.util.*;
+public class DeliveryFeeCalculator { public static void main(String[] a){Scanner s=new Scanner(System.in);int n=s.nextInt();double t=0;while(n-->0){String x=s.next();double w=s.nextDouble(),d=s.nextDouble(),r=x.equals("STANDARD")?5+.5*w+.1*d:x.equals("EXPRESS")?15+w+.2*d:25+2*w+.5*d+s.nextDouble();t+=r;System.out.printf("%s: %.2f%n",x,r);}System.out.printf("Total: %.2f%n",t);} }

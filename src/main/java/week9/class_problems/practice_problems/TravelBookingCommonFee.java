@@ -1,0 +1,1 @@
+import java.util.*; public class TravelBookingCommonFee { public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();while(n-->0){String x=s.next();double d=s.nextDouble(),f=(x.equals("BUS")?2*d:x.equals("TRAIN")?1.5*d:2500+4*d)+50;System.out.printf("%s: %.2f%n",x,f);}} }

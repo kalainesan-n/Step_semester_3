@@ -1,0 +1,2 @@
+import java.util.*;
+public class ParcelShippingDesk { public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();double g=0;while(n-->0){String x=s.next();double w=s.nextDouble(),v=s.nextDouble(),c=x.equals("STANDARD")?40+10*w:x.equals("EXPRESS")?80+15*w:40+10*w+50,i=x.equals("STANDARD")?0:v*.02,t=c+i;g+=t;System.out.printf("%s: Charge=%.2f Insurance=%.2f Total=%.2f%n",x,c,i,t);}System.out.printf("Grand Total: %.2f%n",g);}}

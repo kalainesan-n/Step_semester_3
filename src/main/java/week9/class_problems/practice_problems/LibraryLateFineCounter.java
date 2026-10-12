@@ -1,0 +1,1 @@
+import java.util.*; public class LibraryLateFineCounter { public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();double t=0;while(n-->0){String x=s.next(),name=s.next();int d=s.nextInt();double f=x.equals("BOOK")?2*d:x.equals("DVD")?Math.min(50,5*d):d;t+=f;System.out.printf("%s: %.2f%n",name,f);}System.out.printf("Total Fines: %.2f%n",t);} }

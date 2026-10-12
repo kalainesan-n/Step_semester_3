@@ -1,0 +1,2 @@
+import java.util.*;
+public class CityCabFareMeter { public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();double t=0;while(n-->0){String x=s.next();double km=s.nextDouble();String time=s.next();if(x.equals("MINI")&&time.equals("NIGHT")){System.out.println("MINI: night service not available");continue;}double rate=x.equals("MINI")?10:x.equals("SEDAN")?14:18,f=Math.max(100,km*rate);if(time.equals("NIGHT"))f*=1.2;t+=f;System.out.printf("%s: %.2f%n",x,f);}System.out.printf("Total: %.2f%n",t);}}
